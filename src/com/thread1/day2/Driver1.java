@@ -9,6 +9,19 @@ package com.thread1.day2;
 	 
  }
 public class Driver1 {
+	
+	static int x = 10;
+	static {
+		System.out.println(x);
+		
+		System.out.println("XYZ");
+	}
+	
+	static int y = 15;
+	
+	static {
+		System.out.println("MNO");
+	}
 
 	public static void main(String[] args) {
 		 Process p1 = new Process();
@@ -18,5 +31,5 @@ public class Driver1 {
 		 Thread t2 = new Thread(p2);
 		 t2.start();
 	}
-
+	
 }
