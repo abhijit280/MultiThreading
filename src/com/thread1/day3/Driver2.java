@@ -2,7 +2,7 @@ package com.thread1.day3;
 
 
 class Print {
-	public synchronized void printer() {
+	public  void printer() {
 		for (int i = 0; i < 10; i++) {
 			System.out.println("Printing : "+ i +" : "+Thread.currentThread().getName());
 		}
@@ -13,7 +13,7 @@ class PrintingTask1 extends Thread{
 	public PrintingTask1(Print task) {
 		this.task = task;
 	}
-	public void run() {
+	public synchronized void run() {
 		task.printer();
 	}
 }
