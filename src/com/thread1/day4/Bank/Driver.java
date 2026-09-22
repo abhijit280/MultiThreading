@@ -11,6 +11,7 @@ public class Driver {
 		thread2.start();
 		
 		thread.join();
+		//System.out.println(Thread.currentThread().getState());
 		thread2.join();
 		System.out.println("Sender Account Balance : "+sender.getBalance());
 		System.out.println("Reciever Account Balance : "+reciever.getBalance());
