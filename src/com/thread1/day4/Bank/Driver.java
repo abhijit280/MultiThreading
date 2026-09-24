@@ -14,6 +14,6 @@ public class Driver {
 		//System.out.println(Thread.currentThread().getState());
 		thread2.join();
 		System.out.println("Sender Account Balance : "+sender.getBalance());
-		System.out.println("Reciever Account Balance : "+reciever.getBalance());
+		System.out.println("Reciever Account Balance : "+reciever.getrcvBalance());
 	}
 }

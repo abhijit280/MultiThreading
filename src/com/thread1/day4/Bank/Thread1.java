@@ -11,6 +11,6 @@ public class Thread1 extends Thread {
 	}
 	@Override
 	public void run() {
-		sender.doTransaction(reciever, 800);
+		BankAccount.doTransaction(reciever, 800);
 	}
 }

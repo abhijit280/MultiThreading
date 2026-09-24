@@ -2,12 +2,12 @@ package com.thread1.day4.Priticse1;
 
 public class BankAccount {
 
-	private int balance = 1000;
+	private static int balance = 1000;
 
-	public void doTransaction(int amount) {
+	public static synchronized void doTransaction(int amount) {
 		System.out.println("BankAccount.doTransaction(START>>>>>>>>>>>>>>>)");
 		
-		synchronized (this) {
+		synchronized (BankAccount.class) {
 
 			if (balance >= amount) {
 				balance = balance - amount;

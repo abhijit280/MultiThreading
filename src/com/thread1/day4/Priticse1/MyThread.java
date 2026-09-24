@@ -10,6 +10,6 @@ public class MyThread extends Thread {
 		this.ammount = ammount;
 	}
 	public void run() {
-		account.doTransaction(ammount);
+		BankAccount.doTransaction(ammount);
 	}
 }
