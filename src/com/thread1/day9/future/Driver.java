@@ -20,6 +20,7 @@ public class Driver {
 			MyThread myThread = new MyThread(message);
 			Future<Boolean> future =  es.submit(myThread);
 //			System.out.println("the status is : "+future.get());
+	//here get method wait to the current Thread ,wait until it doesn't get the value  
 		}
 		es.shutdown();
 	}
