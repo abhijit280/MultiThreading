@@ -59,8 +59,7 @@ public class Driver {
 
 		try {
 			int spiprice = spicerService.get(5,TimeUnit.SECONDS);
-			System.out.println("The price if Spicer Ticket : "+spiprice);
-			price.add(spiprice);
+			 
 		} catch (InterruptedException e) {
 			
 			System.out.println("Timed out (Ignored)");
@@ -68,7 +67,7 @@ public class Driver {
 			System.out.println("Timed out (Ignored)");
 		} catch (TimeoutException e) {
 			System.out.println("Timed out (Ignored)");
-		}
+		}   
 		if (!price.isEmpty()) {
 			int minprice = Collections.min(price);
 			System.out.println("the minimum price is : "+minprice);
