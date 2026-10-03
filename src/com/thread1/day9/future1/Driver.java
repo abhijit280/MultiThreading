@@ -73,7 +73,7 @@ public class Driver {
 			System.out.println("the minimum price is : "+minprice);
 		} 
 
-		executorService.shutdown();
+		executorService.shutdown();// its showdown the pools active worker thread
 	}
 
 }
