@@ -36,7 +36,7 @@ public class Driver {
 		});
 		Future<Integer> spicerService = executorService.submit(()->{
 			try {
-				Thread.sleep(10000);
+				Thread.sleep(5000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -58,8 +58,8 @@ public class Driver {
 		}
 
 		try {
-			int spiprice = spicerService.get(5,TimeUnit.SECONDS);
-			 
+			int spiprice = spicerService.get(10,TimeUnit.SECONDS);
+			System.out.println("The price if Spicer Ticket : "+spiprice);
 		} catch (InterruptedException e) {
 			
 			System.out.println("Timed out (Ignored)");
